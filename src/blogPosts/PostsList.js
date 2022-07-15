@@ -2,7 +2,7 @@ import { Col, Row } from 'reactstrap';
 import BlogPost from './BlogPost';
 import NewPostForm from './NewPostForm';
 import { useSelector } from 'react-redux';
-import {fetchPosts } from './blogSlice';
+import {fetchPosts, updatePost, deleteOnePost, deletePosts } from './blogSlice';
 
 const PostsList = ({  }) => {
     const posts = useSelector(fetchPosts());
